@@ -6,7 +6,7 @@ import subprocess
 from datetime import datetime, timedelta
 
 WATCH_DIR = os.environ.get("WATCH_DIR", "/watch")
-PAT = re.compile(r"^(.*) (\d{4}-\d{2}-\d{2} \d{2}\.\d{2}\.\d{2})\.mov$")
+PAT = re.compile(r"^(.*) (\d{4}-\d{2}-\d{2} \d{1,2}\.\d{2}\.\d{2})\.mov$")
 
 
 def parse_dt(s):
